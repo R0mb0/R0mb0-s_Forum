@@ -1,2 +1,4 @@
-# Rombos_Forum
-Official Rombo's Forum repository, where upload forum contents.
+# Official Rombo's forum repository.
+
+In this repo are uploaded the best forum moments.  
+###### Any contribution is welcome ヽ(´▽`)/.
