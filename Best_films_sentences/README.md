@@ -30,3 +30,11 @@ Ti sei fatta quasi una donna... E che cosa dovrei sembrare? Una capra?
 
 ### Boogeyman - L'uomo nero
 Ma guarda, in questa foto sei bello persino tu.
+
+---
+
+### Piedone lo sbirro
+- Tu hai problemi di linea, io no
+- E' pittato
+- Ble notte
+- Guardi che se lo prendo gli faccio un culo tanto
