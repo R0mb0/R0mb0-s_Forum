@@ -1,29 +1,32 @@
 # 1303
 
 ### Scenes with alcohols
-- First element
-- Second element
+- 19
+
 
 ### Scenes with cup
-- First element
-- Second element
+- 15
+
+
+### Drinking Scenes
+- 10
+
 
 ### Scenes where people drunk
-- First element
-- Second element
+- 6
+
 
 ### Scenes where people "gasp"
-- First element
-- Second element
+- 3
+
 
 ### Scenes where people nonsense screaming
-- First element
-- Second element
+- 2
+
 
 ### Scenes where people grab real weapons
-- First element
-- Second element
+- 1
+
 
 ### Scenes where people grab useless weapons
-- First element
-- Second element
+- 1
