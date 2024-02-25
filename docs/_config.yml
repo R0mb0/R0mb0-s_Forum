@@ -1,0 +1,176 @@
+# Name of website
+title: R0mb0's Forum
+
+# Your name to show in the footer
+author: Francesco Rombaldoni
+
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
+
+navbar-links:
+  Storia del forum: "aboutus"
+  Risorse:
+    - GitHub: "https://github.com/R0mb0/R0mb0-s_Forum"
+  #Author's home: "Author's url site"
+
+################
+# --- Logo --- #
+################
+
+avatar: "/assets/img/Logo.png"
+
+round-avatar: true
+
+#####################################
+# --- Footer social media links --- #
+#####################################
+
+# Select the social network links that you want to show in the footer.
+# You can change the order that they show up on the page by changing the order here.
+# Uncomment the links you want to show and add your information to each one.
+social-network-links:
+  email: "f.rombaldoni@campus.uniurb.it"
+#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+#  facebook: yourname
+  github: R0mb0-s_Forum
+#  twitter: yourname
+#  patreon: yourname
+#  youtube: yourname
+#  medium: yourname
+#  reddit: yourname
+#  linkedin: yourNick
+#  xing: yourname
+#  stackoverflow: "cod/yourname"
+#  snapchat: yourname
+#  instagram: yourname
+#  spotify: yourname
+#  telephone: number
+#  steam: yourname
+#  twitch: yourname
+#  yelp: yourname
+#  telegram: yourname
+#  calendly: yourname
+#  mastodon: instance.url/@username
+#  ORCID: your ORCID ID
+#  google-scholar: your google scholar
+#  discord: "invite_code" or "users/userid" or "invite/invite_code"
+#  kaggle: yourname
+#  hackerrank: yourname
+#  gitlab: yourname
+
+# If you want your website to generate an RSS feed, provide a description
+# The URL for the feed will be https://<your_website>/feed.xml
+rss-description: R0mb0's Forum
+
+###########################
+# --- General options --- #
+###########################
+
+# Select which social network share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+  vk: true
+
+# How to display the link to your website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "https://github.com/R0mb0/R0mb0-s_Forum"
+
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
+
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
+
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: false
+
+navbar-var-length: false
+
+######################################
+# --- Colours / background image --- #
+######################################
+
+# Personalize the colours in your website. Colour values can be any valid CSS colour
+
+#navbar-col: "#EAEAEA"
+navbar-col: "#F3B8B3"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+#footer-col: "#EAEAEA"
+footer-col: "#F3B8B3"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+#################################
+# --- Web Analytics Section --- #
+#################################
+
+####################
+# --- Comments --- #
+####################
+
+################
+# --- Misc --- #
+################
+
+# Ruby Date Format to show dates of posts
+date_format: "%B %-d, %Y"
+
+# Facebook App ID
+#fb_app_id: ""
+
+#################################################################################
+# --- You don't need to touch anything below here (but you can if you want) --- #
+#################################################################################
+
+# Output options (more information on Jekyll's site)
+timezone: "America/Toronto"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - LICENSE
+  - README.md
+  - docs/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
