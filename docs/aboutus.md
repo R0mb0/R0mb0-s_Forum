@@ -1,6 +1,6 @@
 
 <div>
- <img align="right"  width="20%"  height="20%" src='assets/img/Logo.png'>
+ <img align="right"  width="20%"  height="20%" src="https://github.com/R0mb0/R0mb0-s_Forum/blob/main/docs/assets/img/Logo.png">
  <h3>
   "Il Forum di Rombo" è una iniziativa nata durante il periodo del covid come sistema per organizzare dei cineforum tra amici in modo da tenere vivo il contatto.<br>
  </h3>
