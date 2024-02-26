@@ -1,10 +1,10 @@
-let PomodoroSiteJS = {
+let forumsiteJS = {
 
   bigImgEl : null,
   numImgs : null,
 
   init : function() {
-    setTimeout(PomodoroSiteJS.initNavbar, 10);
+    setTimeout(forumsiteJS.initNavbar, 10);
 
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
@@ -24,9 +24,9 @@ let PomodoroSiteJS = {
     });
 
     // show the big header image
-    PomodoroSiteJS.initImgs();
+    forumsiteJS.initImgs();
 
-    PomodoroSiteJS.initSearch();
+    forumsiteJS.initSearch();
   },
 
   initNavbar : function() {
@@ -47,19 +47,19 @@ let PomodoroSiteJS = {
   initImgs : function() {
     // If the page was large images to randomly select from, choose an image
     if ($("#header-big-imgs").length > 0) {
-      PomodoroSiteJS.bigImgEl = $("#header-big-imgs");
-      PomodoroSiteJS.numImgs = PomodoroSiteJS.bigImgEl.attr("data-num-img");
+      forumsiteJS.bigImgEl = $("#header-big-imgs");
+      forumsiteJS.numImgs = forumsiteJS.bigImgEl.attr("data-num-img");
 
       // 2fc73a3a967e97599c9763d05e564189
       // set an initial image
-      const imgInfo = PomodoroSiteJS.getImgInfo();
+      const imgInfo = forumsiteJS.getImgInfo();
       const src = imgInfo.src;
       const desc = imgInfo.desc;
-      PomodoroSiteJS.setImg(src, desc);
+      forumsiteJS.setImg(src, desc);
 
       // For better UX, prefetch the next image so that it will already be loaded when we want to show it
       const getNextImg = function() {
-        const imgInfo = PomodoroSiteJS.getImgInfo();
+        const imgInfo = forumsiteJS.getImgInfo();
         const src = imgInfo.src;
         const desc = imgInfo.desc;
 
@@ -75,7 +75,7 @@ let PomodoroSiteJS = {
           // after the animation of fading in the new image is done, prefetch the next one
           //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
           setTimeout(function() {
-            PomodoroSiteJS.setImg(src, desc);
+            forumsiteJS.setImg(src, desc);
             img.remove();
             getNextImg();
           }, 1000);
@@ -84,16 +84,16 @@ let PomodoroSiteJS = {
       };
 
       // If there are multiple images, cycle through them
-      if (PomodoroSiteJS.numImgs > 1) {
+      if (forumsiteJS.numImgs > 1) {
         getNextImg();
       }
     }
   },
 
   getImgInfo : function() {
-    const randNum = Math.floor((Math.random() * PomodoroSiteJS.numImgs) + 1);
-    const src = PomodoroSiteJS.bigImgEl.attr("data-img-src-" + randNum);
-    const desc = PomodoroSiteJS.bigImgEl.attr("data-img-desc-" + randNum);
+    const randNum = Math.floor((Math.random() * forumsiteJS.numImgs) + 1);
+    const src = forumsiteJS.bigImgEl.attr("data-img-src-" + randNum);
+    const desc = forumsiteJS.bigImgEl.attr("data-img-desc-" + randNum);
 
     return {
       src : src,
@@ -111,24 +111,24 @@ let PomodoroSiteJS = {
   },
 
   initSearch : function() {
-    if (!document.getElementById("pomodorosite-search-overlay")) {
+    if (!document.getElementById("forumsite-search-overlay")) {
       return;
     }
 
     $("#nav-search-link").click(function(e) {
       e.preventDefault();
-      $("#pomodorosite-search-overlay").show();
+      $("#forumsite-search-overlay").show();
       $("#nav-search-input").focus().select();
       $("body").addClass("overflow-hidden");
     });
     $("#nav-search-exit").click(function(e) {
       e.preventDefault();
-      $("#pomodorosite-search-overlay").hide();
+      $("#forumsite-search-overlay").hide();
       $("body").removeClass("overflow-hidden");
     });
     $(document).on('keyup', function(e) {
       if (e.key == "Escape") {
-        $("#pomodorosite-search-overlay").hide();
+        $("#forumsite-search-overlay").hide();
         $("body").removeClass("overflow-hidden");
       }
     });
@@ -137,4 +137,4 @@ let PomodoroSiteJS = {
 
 // 2fc73a3a967e97599c9763d05e564189
 
-document.addEventListener('DOMContentLoaded', PomodoroSiteJS.init);
+document.addEventListener('DOMContentLoaded', forumsiteJS.init);

@@ -675,10 +675,10 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 3.125rem;
-  color: #EC8F87
+  color: #008AFF
 }
 .page-subheading{
-  color: #EC8F87
+  color: #008AFF
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
@@ -1021,7 +1021,7 @@ pre {
 }
 
 /* Search bar */
-#pomodorosite-search-overlay {
+#forumsite-search-overlay {
   display: none;
   z-index: 999999;
   position: fixed;
