@@ -106,14 +106,14 @@ navbar-col: "#3A3B3C"
 navbar-text-col: "#e604d6"
 navbar-border-col: "#DDDDDD"
 page-col: "#D3D3D3"
-text-col: "#404040"
+text-col: "#3A3B3C"
 link-col: "#008AFF"
-hover-col: "#008AFF"
+hover-col: "#0085A1"
 #footer-col: "#EAEAEA"
 footer-col: "#3A3B3C"
 footer-text-col: "#e604d6"
 footer-link-col: "#e604d6"
-footer-hover-col: "#008AFF"
+footer-hover-col: "#0085A1"
 
 #################################
 # --- Web Analytics Section --- #
